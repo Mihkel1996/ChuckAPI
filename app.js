@@ -11,7 +11,7 @@ function getJokes(event) {
     .then(function(data){
         let output = "";
 
-        data.value.foreach(joke => {
+        data.value.forEach(joke => {
             output+= `<li>${joke.joke}</li>`;
         });
 
